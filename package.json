@@ -1,15 +1,19 @@
 {
   "name": "blue-app-task-backend",
+  "type": "module",
   "version": "1.0.0",
   "description": "Make backend to blue task app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch ./ --exec node --experimental-modules server.js"
   },
   "keywords": [],
   "author": "Mahmoud Elkhadragy",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
